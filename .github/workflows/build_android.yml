@@ -25,4 +25,10 @@ jobs:
           path: platforms/android/app/build/outputs/apk/debug/app-debug.apk   
 
       - name: Build iOS
-        run: ionic cordova build ios    
+        run: ionic cordova build ios 
+
+      - name: Upload iOS App
+        uses: actions/upload-artifact@v2.2.0
+        with:
+          name: ios          
+          path: platforms/ios/build/emulator/MyApp.app
