@@ -9,8 +9,8 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.1.2    
         
-      - name: Install Ionic
-        run: sudo npm install -g @ionic/cli
+      - name: Install Ionic and Cordova
+        run: sudo npm install -g @ionic/cli cordova
         
       - name: Checkout
         uses: actions/checkout@v2.3.4
