@@ -23,4 +23,6 @@ jobs:
         with:
           name: android          
           path: platforms/android/app/build/outputs/apk/debug/app-debug.apk   
-    
+
+      - name: Build iOS
+        run: ionic cordova build ios    
